@@ -2,6 +2,7 @@ export const projects = [
     {
     id: 1,
     title: "Riding Cities",
+    alt: "Aperçu de la page Riding Cities avec un skateboard sur un passage piéton",
     image: "/images/ridingcities.webp",
     description: "Création d’une section web à partir d’une maquette Figma, pour une association.",
     tags: ["HTML", "CSS"],
@@ -11,6 +12,7 @@ export const projects = [
   {
     id: 2,
     title: "Booki",
+    alt: "Aperçu de la page d'accueil Booki avec la recherche d'hébergements",
     image: "/images/booki.webp",
     description: "Intégration d’un site responsive à partir d’une maquette Figma pour une agence de voyage.",
     tags: ["HTML", "CSS"],
@@ -19,7 +21,8 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Oh my food",
+    title: "Ohmyfood",
+    alt: "Aperçu de la page d'accueil ohmyfood",
     image: "/images/ohmyfood.webp",
     description: "Développer un site mobile-first qui répertorie les menus de restaurants gastronomiques et permet aux utilisateurs de naviguer facilement entre les différentes offres culinaires.",
     tags: ["HTML", "SASS",],
@@ -29,24 +32,27 @@ export const projects = [
   {
     id: 4,
     title: "Print It",
+    alt: "Aperçu du carrousel d'impressions Print It",
     image: "/images/printit.webp",
     description: "Développement d’un carrousel interactif en JavaScript.",
     tags: ["HTML", "CSS", "JavaScript",],
     github: "https://github.com/Judith-star39/Print-it",
-    demo: "https://github.com/Judith-star39/Print-it",   
+    demo: "https://judith-star39.github.io/Print-it/",   
   },
   {
     id: 5,
     title: "Portfolio de Sophe-Buel",
+    alt: "Aperçu du portfolio de l'architecte Sophie Bluel",
     image: "/images/architectesophiebuel.webp",
     description: "Développer une page web dynamique en JavaScript pour le portfolio d’une architecte d’intérieur, permettant l’affichage, la gestion et la mise à jour des projets via une interface administrateur sécurisée.",
     tags: ["HTML", "CSS", "JavaScript", "API", ],
     github: "https://github.com/Judith-star39/Portfolio-architecte-sophie-bluel",
-    demo: "https://judith-star39.github.io/Portfolio-architecte-sophie-bluel/",
+    demo: null,
   },
   {
     id: 6,
     title: "Kasa",
+    alt: "Aperçu de la page d'accueil Kasa",
     image: "/images/kasa.webp",
     description: "Plateforme de location immobilière entre particuliers. Développée avec React Router, composants réutilisables et animations CSS.",
     tags: ["React", "React Router", "Vite", "CSS"],
@@ -56,6 +62,7 @@ export const projects = [
   {
     id: 7,
     title: "Nina Carducci",
+    alt: "Aperçu du portfolio photographe Nina Carducci",
     image: "/images/ninacarducci.webp",
     description: "Audit et optimisation SEO/performance d'un site photographe. Score Lighthouse +90%, images WebP, Schema.org JSON-LD, accessibilité WCAG.",
     tags: ["SEO", "Performance", "Accessibilité", "Lighthouse"],
@@ -65,16 +72,18 @@ export const projects = [
   {
     id: 8,
     title: "724 Events",
+    alt: "Aperçu de la page d'accueil 724 Events",
     image: "/images/724events.webp",
     description: "Site événementiel avec débogage complet de 8 bugs React. Cahier de recette BDD avec 12 scénarios validés.",
     tags: ["React", "Jest", "Debug", "BDD"],
     github: "https://github.com/Judith-star39/724-events",
-    demo: "https://judith-star39.github.io/724-events/",
+    demo: "https://judith-star39.github.io/724-Events/",
   },
   
   {
     id: 9,
     title: "Argent Bank",
+    alt: "Aperçu du tableau de bord Argent Bank",
     image: "/images/argentbank2.webp",
     description: "Application bancaire full React avec authentification JWT et gestion d'état via Redux Toolkit. Documentation API Swagger pour les endpoints de transactions.",
     tags: ["React", "Redux Toolkit", "Vite", "JWT", "Swagger"],
