@@ -142,7 +142,7 @@ header a:hover {
   font-weight: 300;
   color: var(--text);
   letter-spacing: -0.01em;
-  margin-bottom: 0.5rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -188,7 +188,7 @@ header a:hover {
 
   #a-propos h2 {
     font-size: 1.4rem;
-    text-align: left;
+    /*text-align: left;*/
   }
 }
 
@@ -205,7 +205,7 @@ header a:hover {
   font-weight: 300;
   color: var(--text);
   letter-spacing: -0.01em;
-  margin-bottom: 0.5rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -253,11 +253,6 @@ header a:hover {
   gap: 0.75rem;
 }
 
-/*.projet-year {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
-}*/
 
 .projet-content h3 {
   font-size: 1.05rem;
@@ -314,6 +309,223 @@ header a:hover {
   }
   #projets h2 {
     font-size: 1.4rem;
-    text-align: left;
+    /*text-align: left;*/
+  }
+}
+
+/* competences*/
+
+#competences {
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+#competences h2 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  color: var(--text);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.skill-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 130px;
+  flex-shrink: 0;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.skill-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.skill-card img {
+  width: 48px;
+  height: 48px;
+  max-width: 48px;
+  max-height: 48px;
+  object-fit: contain;
+  display: block;
+}
+
+.skill-card span {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  text-align: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* contact*/
+
+#contact {
+  padding: 6rem 2.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.contact-inner {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
+}
+
+.contact-intro {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  font-family: var(--font);
+  font-size: 0.95rem;
+  color: var(--text);
+  background: var(--bg);
+  outline: none;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.85rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  font-family: var(--font);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-top: 0.5rem;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.85;
+}
+
+.contact-success {
+  padding: 1.5rem;
+  background: #f0f7ff;
+  border: 1px solid var(--accent);
+  border-radius: 2px;
+  color: var(--accent);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  #contact {
+    padding: 4rem 1.5rem;
+  }
+}
+
+/* Footer */
+
+footer {
+  padding: 2rem 2.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.footer-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
   }
 }
