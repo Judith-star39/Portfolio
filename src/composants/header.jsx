@@ -17,6 +17,7 @@ export default function Header() {
       <ul className={open ? 'open' : ''}>
         <li><a href="#accueil" onClick={() => setOpen(false)}>Accueil</a></li>
         <li><a href="#a-propos" onClick={() => setOpen(false)}>À Propos</a></li>
+        <li><a href="#parcours" onClick={() => setOpen(false)}>Parcours</a></li>
         <li><a href="#projets" onClick={() => setOpen(false)}>Projets</a></li>
         <li><a href="#competences" onClick={() => setOpen(false)}>Compétences</a></li>
         <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>

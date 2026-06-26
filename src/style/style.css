@@ -500,7 +500,6 @@ footer {
 
 .footer-copy {
   font-size: 0.8rem;
-  color: var(--text-muted);
 }
 
 .footer-links {
@@ -527,5 +526,187 @@ footer {
     flex-direction: column;
     gap: 1rem;
     text-align: center;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.modal {
+  background: var(--bg);
+  border-radius: 4px;
+  padding: 2.5rem;
+  max-width: 640px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+
+.modal-close:hover {
+  color: var(--text);
+}
+
+.modal h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.modal-fiche {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.fiche-section h3 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.fiche-section p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.modal-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.modal-links a {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.modal-links a:hover {
+  opacity: 0.7;
+}
+
+.projet-card {
+  cursor: pointer;
+}
+
+#parcours {
+  padding: 6rem 2.5rem;
+  max-width: 720px;
+  margin: 0 auto;
+  scroll-margin-top: 80px;
+}
+
+#parcours h2 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  color: var(--text);
+  letter-spacing: -0.01em;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-point {
+  position: absolute;
+  left: -2.4rem;
+  top: 0.25rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.timeline-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.timeline-periode {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  font-weight: 400;
+}
+
+.timeline-tag {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.6rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--accent);
+  font-weight: 500;
+  width: fit-content;
+}
+
+.timeline-content h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-top: 0.25rem;
+}
+
+.timeline-content p {
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+
+@media (max-width: 768px) {
+  #parcours {
+    padding: 4rem 1.5rem;
   }
 }

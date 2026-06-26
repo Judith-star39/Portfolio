@@ -5,6 +5,14 @@ export const projects = [
     alt: "",
     image: "/images/ridingcities.webp",
     description: "Création d’une section web à partir d’une maquette Figma, pour une association.",
+    fiche: {
+    contexte: "Dans le cadre d'un stage fictif chez l'agence Webonzaï, j'ai reçu ma première mission en autonomie : mettre à jour la page web de Riding Cities, une association sportive de promotion du skate en région.",
+    objectifs: "Intégrer deux nouvelles sections à une page existante — une section Membres fondateurs avec photos et noms, et une section de téléchargement de plannings distincts (enfants / adultes)  en respectant scrupuleusement la maquette fournie par le graphiste.",
+    stack: "HTML5, CSS3.",
+    competences: "Lecture et compréhension d'un code existant, intégration fidèle à partir d'une maquette Figma, réutilisation de classes CSS sans en modifier la logique, travail en autonomie sans encadrement direct.",
+    resultats: "Page mise à jour et conforme à la maquette, avec les deux nouvelles sections fonctionnelles et visuellement cohérentes avec le design existant du site.",
+    perspectives: "Rendre la page responsive pour les mobiles, optimiser les images des membres fondateurs en WebP, et améliorer l'accessibilité avec des attributs aria appropriés."
+  },
     tags: ["HTML", "CSS"],
     github: "https://github.com/Judith-star39/Riding-Cities",
     demo: "https://judith-star39.github.io/Riding-Cities/",
@@ -15,6 +23,14 @@ export const projects = [
     alt: "",
     image: "/images/booki.webp",
     description: "Intégration d’un site responsive à partir d’une maquette Figma pour une agence de voyage.",
+    fiche: {
+    contexte: "En tant que développeur web en alternance chez Booki, j'ai été chargée d'intégrer l'interface d'un site permettant aux utilisateurs de rechercher des hébergements et des activités dans la ville de leur choix, à partir de maquettes fournies par l'UI designer.",
+    objectifs: "Intégrer fidèlement les maquettes desktop et mobile en HTML/CSS pur, en respectant les spécifications fonctionnelles et techniques définies par la CTO, tout en conservant la structure de fichiers imposée.",
+    stack: "HTML5, CSS3 (Flexbox, media queries), aucune bibliothèque externe.",
+    competences: "Intégration pixel-perfect à partir de maquettes Figma, mise en place d'un design responsive mobile-first, structuration sémantique du HTML.",
+    resultats: "Site Booki entièrement intégré, responsive sur mobile, tablette et desktop, conforme aux maquettes et aux spécifications techniques transmises.",
+    perspectives: "Connecter un moteur de recherche fonctionnel, ajouter des filtres interactifs en JavaScript, et améliorer les scores d'accessibilité avec des landmarks ARIA."
+  },
     tags: ["HTML", "CSS"],
     github: "https://github.com/Judith-star39/Booki",
     demo: "https://judith-star39.github.io/Booki/",
@@ -25,6 +41,14 @@ export const projects = [
     alt: "",
     image: "/images/ohmyfood.webp",
     description: "Développer un site mobile-first qui répertorie les menus de restaurants gastronomiques et permet aux utilisateurs de naviguer facilement entre les différentes offres culinaires.",
+    fiche: {
+    contexte: "En tant que développeur junior chez OhMyFood, une startup souhaitant s'imposer sur le marché de la restauration gastronomique parisienne, j'ai développé un site mobile-first répertoriant les menus de 4 restaurants partenaires, avec composition de menu en ligne.",
+    objectifs: "Développer un site responsive mobile-first permettant aux clients de consulter et composer leur menu à l'avance, en intégrant des animations CSS soignées à partir d'un prototype Figma, et en structurant le CSS avec SASS.",
+    stack: "HTML5, CSS3, SASS (architecture en partials), animations CSS (keyframes, transitions), approche mobile-first.",
+    competences: "Intégration mobile-first à partir de maquettes et prototype Figma, structuration du code CSS avec SASS, conception d'animations CSS fluides, respect d'un brief créatif complet.",
+    resultats: "Site OhMyFood livré avec 4 menus de restaurants intégrés, entièrement responsive, avec animations CSS fonctionnelles sur les interactions utilisateur.",
+    perspectives: "Rendre le système de composition de menu fonctionnel avec JavaScript, connecter une API de réservation, et ajouter une gestion des favoris persistante."
+  },
     tags: ["HTML", "SASS",],
     github: "https://github.com/Judith-star39/ohmyfood",
     demo: "https://judith-star39.github.io/ohmyfood/",
@@ -35,6 +59,14 @@ export const projects = [
     alt: "",
     image: "/images/printit.webp",
     description: "Développement d’un carrousel interactif en JavaScript.",
+    fiche: {
+    contexte: "En tant que développeur front-end freelance, j'ai été missionné par Print It, une imprimerie familiale, pour dynamiser leur site web statique en y intégrant un carrousel interactif.",
+    objectifs: "Développer un carrousel fonctionnel en JavaScript permettant de faire défiler les visuels de l'imprimerie, selon les spécifications précises du directeur, sans utiliser de bibliothèque externe.",
+    stack: "HTML5, CSS3, JavaScript.",
+    competences: "Manipulation du DOM en JavaScript pur, gestion des événements utilisateur (clics, navigation), logique de défilement cyclique, intégration d'une fonctionnalité interactive sur un site existant sans en altérer le code.",
+    resultats: "Carrousel entièrement fonctionnel livré au client, navigation fluide entre les slides, compatible avec les principaux navigateurs.",
+    perspectives: "Ajouter un défilement automatique avec pause au survol, rendre le carrousel accessible au clavier et aux lecteurs d'écran, et optimiser les images pour améliorer les performances."
+  },
     tags: ["HTML", "CSS", "JavaScript",],
     github: "https://github.com/Judith-star39/Print-it",
     demo: "https://judith-star39.github.io/Print-it/",   
@@ -45,6 +77,14 @@ export const projects = [
     alt: "",
     image: "/images/architectesophiebuel.webp",
     description: "Développer une page web dynamique en JavaScript pour le portfolio d’une architecte d’intérieur, permettant l’affichage, la gestion et la mise à jour des projets via une interface administrateur sécurisée.",
+    fiche: {
+    contexte: "En renfort au sein de l'agence ArchiWebos, j'ai rejoint une équipe projet pour développer le site portfolio d'une architecte d'intérieur. Le back-end était déjà en place, ma mission portait exclusivement sur le développement front-end de nouvelles fonctionnalités.",
+    objectifs: "Développer trois fonctionnalités clés : la page de présentation dynamique des travaux, la page de connexion administrateur, et une modale d'upload de médias le tout en communicant avec une API back-end existante.",
+    stack: "HTML5, CSS3, JavaScript, API REST (fetch, JSON), manipulation du DOM, gestion de l'authentification (token).",
+    competences: "Intégration à partir d'une maquette Figma, développement de fonctionnalités JavaScript, communication avec une API REST, gestion d'une session utilisateur avec token.",
+    resultats: "Trois fonctionnalités livrées et fonctionnelles : galerie dynamique filtrée par catégorie, page de connexion sécurisée, et modale d'upload permettant à l'administrateur d'ajouter de nouveaux projets sans toucher au code.",
+    perspectives: "Refactoriser le code en modules ES6, ajouter une gestion des erreurs plus robuste côté formulaires, et migrer vers React pour une meilleure maintenabilité."
+  },
     tags: ["HTML", "CSS", "JavaScript", "API", ],
     github: "https://github.com/Judith-star39/Portfolio-architecte-sophie-bluel",
     demo: null,
@@ -55,6 +95,14 @@ export const projects = [
     alt: "",
     image: "/images/kasa.webp",
     description: "Plateforme de location immobilière entre particuliers. Développée avec React Router, composants réutilisables et animations CSS.",
+    fiche: {
+    contexte: "En freelance pour Kasa, leader de la location d'appartements entre particuliers en France, j'ai participé à la refonte totale du site migration d'une stack legacy ASP.NET vers une application React moderne, à partir de maquettes Figma responsives et d'un fichier JSON de 20 annonces.",
+    objectifs: "Développer l'intégralité de l'application front-end en React : composants réutilisables, routing avec React Router, galerie d'images avec navigation cyclique, et composants Collapse animés  en respectant les coding guidelines de Kasa.",
+    stack: "React, React Router, Vite, CSS3, données JSON statiques en attendant le back-end.",
+    competences: "Architecture d'une application React, création de composants réutilisables, mise en place du routing avec React Router, gestion d'états locaux (useState), intégration responsive à partir de maquettes Figma, respect de guidelines de code en équipe.",
+    resultats: "Application Kasa entièrement développée et déployée, avec galerie d'images cyclique, accordéons animés, navigation multi-pages et affichage dynamique des 20 annonces depuis le fichier JSON.",
+    perspectives: "Connecter un back-end Node.js pour des données réelles, ajouter un système de filtres et de recherche, et implémenter des tests unitaires sur les composants clés."
+  },
     tags: ["React", "React Router", "Vite", "CSS"],
     github: "https://github.com/Judith-star39/Kasa",
     demo: "https://judith-star39.github.io/Kasa/",
@@ -65,6 +113,14 @@ export const projects = [
     alt: "",
     image: "/images/ninacarducci.webp",
     description: "Audit et optimisation SEO/performance d'un site photographe. Score Lighthouse +90%, images WebP, Schema.org JSON-LD, accessibilité WCAG.",
+    fiche: {
+    contexte: "En freelance, j'ai prospecté et décroché une mission d'optimisation SEO et performance pour le site de Nina Carducci, photographe portraits et événementiel à Bordeaux, dont le site était trop lent et invisible sur les moteurs de recherche.",
+    objectifs: "Optimiser les performances et le SEO du site : compression des images, amélioration de l'accessibilité, mise en place du référencement local via Schema.org, ajout des metas réseaux sociaux, et livraison d'un rapport d'optimisation avant/après.",
+    stack: "HTML5, CSS3, JavaScript, Lighthouse, WAVE (accessibilité), Schema.org JSON-LD, (conversion WebP), balises Open Graph et Twitter Card.",
+    competences: "Audit de performance et d'accessibilité, optimisation d'images (conversion WebP), structuration de données Schema.org pour le référencement local, correction des erreurs d'accessibilité WCAG, prospection client et rédaction d'un rapport d'optimisation professionnel.",
+    resultats: "Score Lighthouse supérieur à 90% en performance, SEO et accessibilité après optimisation. Temps de chargement significativement réduit, référencement local activé, et rapport d'audit livré au client avec comparatif avant/après.",
+    perspectives: "Mettre en place un lazy loading sur la galerie photos, ajouter un sitemap XML, et implémenter un système de cache pour les assets statiques."
+  },
     tags: ["SEO", "Performance", "Accessibilité", "Lighthouse"],
     github: "https://github.com/Judith-star39/nina-carducci",
     demo: "https://judith-star39.github.io/ninacarducci/",   
@@ -75,6 +131,14 @@ export const projects = [
     alt: "",
     image: "/images/724events.webp",
     description: "Site événementiel avec débogage complet de 8 bugs React. Cahier de recette BDD avec 12 scénarios validés.",
+    fiche: {
+    contexte: "L'agence événementielle 724events m'a contacté en urgence pour reprendre et finaliser le site vitrine one-page d'un précédent développeur qui avait dû abandonner le projet. Le site était fonctionnel mais plusieurs bugs bloquants empêchaient une mise en production sereine.",
+    objectifs: "Identifier et corriger l'ensemble des bugs présents dans le code React existant, finaliser le cahier de recette avec tous les scénarios de test, et livrer un site stable et prêt à être publié.",
+    stack: "React, JavaScript, Jest (tests unitaires), débogage via DevTools, cahier de recette BDD.",
+    competences: "Lecture et compréhension d'un code existant écrit par quelqu'un d'autre, identification et correction de bugs React (state, props, événements), rédaction de scénarios de test BDD, utilisation de Jest pour les tests unitaires, gestion d'une mission en situation d'urgence.",
+    resultats: "8 bugs identifiés et corrigés, 12 scénarios de test validés dans le cahier de recette, site livré stable et prêt à la mise en production dans les délais demandés par le client.",
+    perspectives: "Augmenter la couverture de tests avec des tests d'intégration, mettre en place un CI/CD pour automatiser les tests à chaque déploiement, et refactoriser certains composants pour améliorer la lisibilité du code."
+  },
     tags: ["React", "Jest", "Debug", "BDD"],
     github: "https://github.com/Judith-star39/724-events",
     demo: "https://judith-star39.github.io/724-Events/",
@@ -86,6 +150,14 @@ export const projects = [
     alt: "",
     image: "/images/argentbank2.webp",
     description: "Application bancaire full React avec authentification JWT et gestion d'état via Redux Toolkit. Documentation API Swagger pour les endpoints de transactions.",
+    fiche: {
+    contexte: "En tant que développeur front-end chez Argent Bank, une nouvelle banque en ligne, j'ai travaillé en équipe sur le développement du tableau de bord utilisateur  en deux phases : l'authentification (phase 1) et la conception des routes API pour la gestion des transactions (phase 2).",
+    objectifs: "Développer une application React complète et responsive avec système d'authentification JWT, gestion d'état globale via Redux Toolkit, et proposer une modélisation des endpoints API pour les transactions en suivant la syntaxe Swagger.",
+    stack: "React, Redux Toolkit, Vite, JWT (authentification), API REST, Swagger/OpenAPI (documentation YAML), Node.js/MongoDB (back-end fourni).",
+    competences: "Mise en place d'une authentification complète (connexion, déconnexion, routes protégées), gestion d'état global avec Redux Toolkit, communication avec une API REST existante, modélisation d'endpoints API avec Swagger, bonnes pratiques Green Code, travail en équipe avec cheffe de projet.",
+    resultats: "Application bancaire livrée avec authentification JWT fonctionnelle, tableau de bord utilisateur sécurisé, modification du pseudo en temps réel, et documentation Swagger des endpoints de transactions exportée en YAML.",
+    perspectives: "Implémenter la phase 2 (visualisation et gestion des transactions), ajouter des tests unitaires sur les reducers Redux, et améliorer la gestion des erreurs côté formulaires."
+  },
     tags: ["React", "Redux Toolkit", "Vite", "JWT", "Swagger"],
     github: "https://github.com/Judith-star39/ArgentBank-siteweb",
     demo: null,
