@@ -2,7 +2,7 @@ Portfolio — Judith Mawombo
 
 Portfolio de développeuse front-end, réalisé avec React et Vite dans le cadre de la formation Intégrateur Web d'OpenClassrooms.
 
-🔗 Voir le site en ligne : https://portfolio-ten-ivory-fegun1ms7g.vercel.app/#accueil
+🔗 Voir le site en ligne : https://portfolio-ten-ivory-fegun1ms7g.vercel.app/
 
 Stack technique
 
