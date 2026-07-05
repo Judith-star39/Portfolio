@@ -1,21 +1,24 @@
-import { useState } from 'react'
+import { useState} from 'react'
 import '../style/style.css'
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    nom: '',
-    email: '',
-    message: ''
-  })
   const [envoye, setEnvoye] = useState(false)
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value })
-  }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setEnvoye(true)
+    const form = e.target
+
+    const response = await fetch('https://formspree.io/f/xbdvwagv', {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { Accept: 'application/json' }
+    })
+
+    if (response.ok) {
+      setEnvoye(true)
+      form.reset()
+    }
   }
 
   return (
@@ -24,7 +27,7 @@ export default function Contact() {
         <h2>Contact</h2>
         {envoye ? (
           <p className="contact-success">
-            ✓ Message envoyé, je vous réponds rapidement !
+             Message envoyé, je vous réponds rapidement !
           </p>
         ) : (
           <form onSubmit={handleSubmit}>
@@ -34,8 +37,6 @@ export default function Contact() {
                 type="text"
                 id="nom"
                 name="nom"
-                value={formData.nom}
-                onChange={handleChange}
                 placeholder="Votre nom"
                 required
               />
@@ -46,8 +47,6 @@ export default function Contact() {
                 type="email"
                 id="email"
                 name="email"
-                value={formData.email}
-                onChange={handleChange}
                 placeholder="votre@email.com"
                 required
               />
@@ -57,8 +56,6 @@ export default function Contact() {
               <textarea
                 id="message"
                 name="message"
-                value={formData.message}
-                onChange={handleChange}
                 placeholder="Votre message..."
                 rows="5"
                 required
